@@ -177,7 +177,7 @@ initial_activities = {
         "participants": []
     },
     "French Lessons": {
-        "description": "Let's practice some French for the summer.",
+        "description": "Bonjour! Dive into the French language and culture — perfect for impressing locals on your summer travels. No experience needed, just curiosity and enthusiasm!",
         "category": "Languages",
         "schedule": "Tuesdays, 7:00 PM",
         "schedule_details": {
