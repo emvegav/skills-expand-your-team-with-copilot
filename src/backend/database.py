@@ -166,6 +166,7 @@ initial_activities = {
     },
     "Copilot Sessions": {
         "description": "How to use Copilot",
+        "category": "Technology",
         "schedule": "Wednesdays, 7:00 PM - 8:00 PM",
         "schedule_details": {
             "days": ["Wednesday"],
