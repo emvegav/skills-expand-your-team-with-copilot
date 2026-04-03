@@ -163,6 +163,18 @@ initial_activities = {
         },
         "max_participants": 16,
         "participants": ["william@mergington.edu", "jacob@mergington.edu"]
+    },
+    "Copilot Sessions": {
+        "description": "How to use Copilot",
+        "category": "Technology",
+        "schedule": "Wednesdays, 7:00 PM - 8:00 PM",
+        "schedule_details": {
+            "days": ["Wednesday"],
+            "start_time": "19:00",
+            "end_time": "20:00"
+        },
+        "max_participants": 15,
+        "participants": []
     }
 }
 
