@@ -175,6 +175,18 @@ initial_activities = {
         },
         "max_participants": 15,
         "participants": []
+    },
+    "French Lessons": {
+        "description": "Bonjour! Dive into the French language and culture — perfect for impressing locals on your summer travels. No experience needed, just curiosity and enthusiasm!",
+        "category": "Languages",
+        "schedule": "Tuesdays, 7:00 PM",
+        "schedule_details": {
+            "days": ["Tuesday"],
+            "start_time": "19:00",
+            "end_time": "20:00"
+        },
+        "max_participants": 15,
+        "participants": []
     }
 }
 
