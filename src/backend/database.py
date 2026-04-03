@@ -175,6 +175,18 @@ initial_activities = {
         },
         "max_participants": 15,
         "participants": []
+    },
+    "French Lessons": {
+        "description": "Let's practice some French for the summer.",
+        "category": "Languages",
+        "schedule": "Tuesdays, 7:00 PM",
+        "schedule_details": {
+            "days": ["Tuesday"],
+            "start_time": "19:00",
+            "end_time": "20:00"
+        },
+        "max_participants": 15,
+        "participants": []
     }
 }
 
