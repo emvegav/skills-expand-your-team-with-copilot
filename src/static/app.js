@@ -304,10 +304,14 @@ document.addEventListener("DOMContentLoaded", () => {
     return details.schedule;
   }
 
-  // Function to determine activity type (this would ideally come from backend)
-  function getActivityType(activityName, description) {
+  // Function to determine activity type
+  function getActivityType(activityName, details) {
+    // Use the category field from the database when available
+    if (details.category) {
+      return details.category.toLowerCase();
+    }
     const name = activityName.toLowerCase();
-    const desc = description.toLowerCase();
+    const desc = details.description.toLowerCase();
 
     if (
       name.includes("soccer") ||
@@ -418,7 +422,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let filteredActivities = {};
 
     Object.entries(allActivities).forEach(([name, details]) => {
-      const activityType = getActivityType(name, details.description);
+      const activityType = getActivityType(name, details);
 
       // Apply category filter
       if (currentFilter !== "all" && activityType !== currentFilter) {
@@ -493,7 +497,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Determine activity type
-    const activityType = getActivityType(name, details.description);
+    const activityType = getActivityType(name, details);
     const typeInfo = activityTypes[activityType];
 
     // Format the schedule using the new helper function
